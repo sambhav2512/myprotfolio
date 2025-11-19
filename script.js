@@ -29,7 +29,7 @@ function closemenu()
      sidemenu.style.right='-200px';
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyccP8slgF8jmhHvtQgNnmaATpprTaTP8q5bn3W4HzBfNBC0zMq353lHH6jOL5pIZKk/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzlB7tMf0ZwKzoqsDivb5yzuIz5T0qzH5FoItkeSgOf1raphhU0FsbnnbMA4dFkdzCiaQ/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg=document.getElementById("msg")
 
