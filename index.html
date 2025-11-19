@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/b80271d2aa.js" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>P</span>ortfolio.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi I'm Sambhav Goel</h1>
+                <img src="images/background1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user-removebg.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p> Aspiring Frontend Developer with comprehensive training in HTML, CSS, and JavaScript. 
+                        Developed dynamic user interfaces during academic projects, harnessing a strong foundation 
+                        in web development principles. Eager to leverage technical skills in a junior role to enhance 
+                        user engagement and contribute to innovative web solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br> C/C++ Programming , Data Structure , HTML5 , CSS3 , Java Script , React.js</li>
+                            <li><span>Tools</span><br> Visual Studio Code , Git & Github , Firebase Console , MS Office Suite</li>
+                            <li><span>Soft Skills</span><br> Communication , Public Speaking , Time Management , Teamwork Mindset</li>
+                            <li><span>Languages</span><br>English and Hindi</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Masters of Computer Application</span><br>From PIET College with 68% <br>2023-2025</li>
+                            <li><span>Bachelors of Computer Application</span><br>From MDU University with 70% <br>2020-2023</li>
+                            <li><span>12th Standard Commerce</span><br>From Rohtak with 78% <br>2019-2020</li>
+                            <li><span>10th Standard</span><br>From Rohtak with 63% <br>2017-2018</li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div id="projects">
+    <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="project-list">
+            <div>
+                <i class="fa-regular fa-cloud"></i>
+                <h2>Weather App</h2>
+                <p>I built a responsive Weather App that fetches real-time weather data using a public API and displays key details like temperature, humidity, and wind speed in a clean UI.</p>
+                <a href="https://weather-app-gold-tau.vercel.app/">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-train"></i>
+                <h2>Railway Ticket Booking System</h2>
+                <p>I developed a Railway Ticket Booking System with my own custom database using Firebase for secure, real-time data storage. The system allows users to search trains, check availability, and book tickets with a smooth and intuitive interface.</p>
+                <a href="https://railway-ticket-booking-system-six.vercel.app/">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-film"></i>
+                <h2>Movie Search Website</h2>
+                <p>I created a Movie Search Website that fetches real-time film data through API calls and allows users to explore detailed information. The platform also includes secure user authentication, enabling personalized access and a smooth browsing experience.</p>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>  
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>sambhavgoel123@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9034239721</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sambhav2512" ><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="" ><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://github.com/sambhav2512"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="images/Sambhav Resume.pdf" download  class="btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button class="btn2" type="submit">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
